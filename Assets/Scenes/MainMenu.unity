@@ -552,50 +552,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &951758996
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 951758998}
-  - component: {fileID: 951758997}
-  m_Layer: 0
-  m_Name: Root
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &951758997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951758996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3b43d6849c71a2499266cf3214a794b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toyScript: Scripts/parent_test
---- !u!4 &951758998
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951758996}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1012205809
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,6 +565,7 @@ GameObject:
   - component: {fileID: 1012205813}
   - component: {fileID: 1012205812}
   - component: {fileID: 1012205811}
+  - component: {fileID: 1012205815}
   m_Layer: 5
   m_Name: Quit Button
   m_TagString: Untagged
@@ -739,6 +696,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012205809}
   m_CullTransparentMesh: 0
+--- !u!114 &1012205815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012205809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8e532fd39d5a247b0df033a3a6fa74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toyScript: Scripts/button_quit
 --- !u!1 &1237668478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,6 +1036,7 @@ GameObject:
   - component: {fileID: 2095118672}
   - component: {fileID: 2095118671}
   - component: {fileID: 2095118670}
+  - component: {fileID: 2095118674}
   m_Layer: 5
   m_Name: Start Button
   m_TagString: Untagged
@@ -1196,6 +1167,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2095118668}
   m_CullTransparentMesh: 0
+--- !u!114 &2095118674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2095118668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c8e532fd39d5a247b0df033a3a6fa74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toyScript: Scripts/button_start
 --- !u!1 &2127698254
 GameObject:
   m_ObjectHideFlags: 0

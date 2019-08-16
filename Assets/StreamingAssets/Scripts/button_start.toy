@@ -1,0 +1,43 @@
+import "Standard";
+import "Unity";
+
+const startButton = Unity.FetchGameObject("Start Button");
+
+startButton.Interface.OnPointerEnter = (x, y) => {
+	print "OnPointerEnter: " + ToString(x) + ", " + ToString(y);
+};
+
+startButton.Interface.OnPointerExit = (x, y) => {
+	print "OnPointerExit: " + ToString(x) + ", " + ToString(y);
+};
+
+startButton.Interface.OnPointerDown = (x, y) => {
+	print "OnPointerDown: " + ToString(x) + ", " + ToString(y);
+};
+
+startButton.Interface.OnPointerUp = (x, y) => {
+	print "OnPointerUp: " + ToString(x) + ", " + ToString(y);
+};
+
+startButton.Interface.OnPointerClick = (x, y) => {
+	print "OnPointerClick: " + ToString(x) + ", " + ToString(y);
+};
+
+startButton.Interface.OnBeginDrag = (x, y) => {
+	print "OnBeginDrag: " + ToString(x) + ", " + ToString(y);
+};
+
+startButton.Interface.OnDrag = (x, y) => {
+	print "OnDrag: " + ToString(x) + ", " + ToString(y);
+};
+
+startButton.Interface.OnEndDrag = (x, y) => {
+	print "OnEndDrag: " + ToString(x) + ", " + ToString(y);
+};
+
+//startButton.Interface.OnDrop = (x, y) => {
+//	print "DROP >>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + startButton.name;
+//	print "OnDrop: " + ToString(x) + ", " + ToString(y);
+//};
+
+

@@ -1,0 +1,33 @@
+import "Standard";
+import "Unity";
+
+const quitButton = Unity.FetchGameObject("Quit Button");
+
+quitButton.Interface.OnDrop = (x, y) => {
+	print "DROP >>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + quitButton.name;
+	print "OnDrop: " + ToString(x) + ", " + ToString(y);
+};
+
+quitButton.Interface.OnUpdateSelected = () => {
+//	print "update";
+};
+
+quitButton.Interface.OnSelect = () => {
+	print "select";
+};
+
+quitButton.Interface.OnDeselect = () => {
+	print "deselect";
+};
+
+quitButton.Interface.OnMove = (x, y) => {
+	print "move" + ToString(x) + ", " + ToString(y);
+};
+
+quitButton.Interface.OnSubmit = () => {
+	print "submit";
+};
+
+quitButton.Interface.OnCancel = () => {
+	print "cancel";
+};
