@@ -1,6 +1,10 @@
 import "Unity";
 
 const quitButton = Unity.FetchGameObject("Quit Button");
-const quitText = quitButton.Transform.GetChild(0).GameObject.Interface.TextMesh;
+const quitText = quitButton.Transform.GetChild(0).GameObject.TextMesh;
 
-print quitText;
+quitButton.Interface.OnPointerClick = (x, y) => {
+	var text = quitText.GetText();
+	text += "x";
+	quitText.SetText(text);
+};
